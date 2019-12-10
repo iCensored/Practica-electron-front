@@ -4,6 +4,7 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 import Home from "../views/Home.vue";
+import Stock from "../views/Stock.vue";
 
 export default new VueRouter({
   mode: "history",
@@ -13,6 +14,11 @@ export default new VueRouter({
       path: "/",
       name: "home",
       component: Home
+    },
+    {
+      path: "/stock",
+      name: "stock",
+      component: Stock
     }
   ]
 });
